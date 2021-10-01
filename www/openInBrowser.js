@@ -1,15 +1,10 @@
 var exec = require("cordova/exec");
 
-function OpenInBrowser() {
-  
-}
+function OpenInBrowser() {}
 
-OpenInBrowser.prototype.open = function (
-  successCallback,
-  errorCallback
-) {
+OpenInBrowser.prototype.open = function (url) {
   //execute action on plugin
-  exec(successCallback, errorCallback, "OpenInBrowser", "open", []);
+  exec(null, null, "OpenInBrowser", "open", [url]);
 };
 
-module.exports = OpenInBrowser;
+module.exports = new OpenInBrowser();

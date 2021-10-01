@@ -1,10 +1,10 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface OpenInBrowser : CDVPlugin
+@interface CDVOpenInBrowser: CDVPlugin
 {}
 
-+ (NSString*)cordovaVersion;
+//+ (NSString*)cordovaVersion;
 
 - (void)open:(CDVInvokedUrlCommand*)command;
 

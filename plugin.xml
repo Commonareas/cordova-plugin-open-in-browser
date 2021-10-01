@@ -7,7 +7,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-open-in-browser"
-    version="2.0.4-dev">
+    version="0.0.1">
     <name>OpenInBrowser</name>
     <description>OpenInBrowser</description>
     
