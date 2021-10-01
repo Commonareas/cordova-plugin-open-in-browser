@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  [Ravi] try building backgroud-uploader
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-open-in-browser"
+    version="2.0.4-dev">
+    <name>OpenInBrowser</name>
+    <description>OpenInBrowser</description>
+    
+    <js-module src="www/openInBrowser.js" name="OpenInBrowser">
+        <clobbers target="OpenInBrowser" />
+    </js-module>
+
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="OpenInBrowser">
+                <param name="ios-package" value="CDVOpenInBrowser"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVOpenInBrowser.h" />
+        <source-file src="src/ios/CDVOpenInBrowser.m" />
+    </platform>
+
+</plugin>

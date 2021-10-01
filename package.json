@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-open-in-browser",
+  "version": "0.0.1",
+  "description": "OpenInBrowser",
+  "cordova": {
+    "id": "cordova-plugin-open-in-browser",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "open-in-browser",
+    "cordova-android",
+    "cordova-ios",
+    "system-browser"
+  ],
+  "author": "Ravi",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {}
+}
