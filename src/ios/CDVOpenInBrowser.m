@@ -5,13 +5,15 @@
 
 - (void)open:(CDVInvokedUrlCommand*)commands
 {
-    // NSDictionary* deviceProperties = [self deviceProperties];
-    // static NSInteger _parallelUploadsLimit = 1;
-
-    // CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:_parallelUploadsLimit];
-
-    // [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-    NSLog(@"CDVOpenInBrowser open is been called");
-    NSLog(@"%@", commands);
+    NSString* url = [commands argumentAtIndex:0];
+    @try {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"CDVOpenInBrowser open url");
+        NSLog(@"%@", url);
+        NSLog(@"%@", exception.reason);
+    }
 }
+
 @end

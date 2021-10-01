@@ -4,7 +4,6 @@
 @interface CDVOpenInBrowser: CDVPlugin
 {}
 
-//+ (NSString*)cordovaVersion;
 
 - (void)open:(CDVInvokedUrlCommand*)command;
 
