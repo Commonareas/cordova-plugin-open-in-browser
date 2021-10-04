@@ -32,6 +32,5 @@ public class OpenInBrowser extends CordovaPlugin {
         } else {
             return false;
         }
-        return true;
     }
 }
